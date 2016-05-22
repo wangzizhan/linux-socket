@@ -1,3 +1,6 @@
+#ifndef WRAP_H
+#define WRAP_H
+
 #include <stdlib.h>
 #include <errno.h>
 #include <sys/socket.h>
@@ -12,3 +15,5 @@ int Socket(int family, int type, int protocal);
 ssize_t Read(int fd, void *ptr, size_t nbytes);
 ssize_t Write(int fd, const void *ptr, size_t nbytes);
 void Close(int fd);
+
+#endif
